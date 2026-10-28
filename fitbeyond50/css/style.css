@@ -1,0 +1,149 @@
+ body{
+  margin:0; /*margin is empty space outside a box*/
+  background-colour:#D3D3D3;
+  font-family:sans-serif;
+ }
+ .topnav{
+ background-color:white;
+ width:100%; /*full width*/
+ display:flex; /*put things inside this box side by side*/
+ justify-content:center; 
+ /*centered*/
+ position:sticky;
+ top:0;
+ /*keeps it stuck to top when you scroll*/
+ z-index:100; /*keeps is above all*/
+}
+.topnav a{ /*every link that is inside topnav*/
+ color:black; 
+ text-align:center;
+ padding: 16px 24px; /*padding=inside border , around content*/
+ text-decoration:none;
+ font-size:18px;
+ font-family:sans-serif;
+ border-bottom:3px solid transparent; /*so that black underline can appear when it is active, without text jumping*/
+}
+.topnav a:hover { 
+ background-color:#ddd;
+ color:black;
+}
+
+.topnav a.active{ /*currently active page*/
+ background-color: white;
+ color:Black;
+ border-bottom:3px solid black; /*active page gets black underline*/
+}
+
+.main-title{
+ color:Black;
+ font-family:sans-serif;
+ font-size:400%;
+ text-align:center;
+ margin-top:40px;
+ margin-bottom:10px;
+}
+
+.dashboard-content{
+ max-width:800px; 
+ margin:0 auto; /*centers it on the screen*/
+      /*y axis, x axis 
+      no space abos or below, the x axis spaces on left/right is worked out by the browser.
+      auto tells browser to work out gap itself by taking the leftover space and splitting it equally on both sides, putting the box in the middle*/
+ padding:48px 20px 20px 20px; 
+ text-align:center;
+}
+.stats-container{ 
+ display:flex;
+ justify-content:center;
+ gap:100px; /*puts XP and Streak side by side with this gap*/
+ color:Black;
+ margin-top:20px;
+ font-size:160%;
+}
+
+:root{ /*top of page variables being defined*/
+    --surface:#fff; /*going to be used for card backgrounds*/
+    --border:#d4d9e5; /*going to be used for card borderd*/
+    --accent:#2563eb;
+
+}
+body{
+    font-family:"Inter",sans-serif;
+    background:#D3D3D3; /*grey brackgroud*/
+    padding:0;
+    margin:0;
+}
+.container{
+    display:flex; /*holds cards side by side*/
+    justify-content:center;
+    gap:20px;
+    max-width:800px;
+    margin:20px auto;
+}
+.card1{
+    width:50%;
+    margin:0 ;
+    padding:16px 28px;
+    border:2px solid var(--border); /*thin border*/
+    border-radius:18px; /*rounded corners*/
+    background:var(--surface); 
+    box-shadow:0 14px 28px rgba(15,23,42,0.08); /*soft shadow*/
+}
+.card1 p{
+    margin:0;
+    line-height:1.6;
+    font-size:1rem;
+}
+.card2{
+    width:50%;
+    margin:0 ;
+    padding:16px 28px;
+    border:2px solid var(--border);
+    border-radius:18px;
+    background:var(--surface);
+    box-shadow:0 14px 28px rgba(15,23,42,0.08);
+}
+.card2 p{
+    margin:0;
+    line-height:1.6;
+    font-size:1rem;
+}
+.bottom-box{
+    max-width:800px; /*wider*/
+    margin:20px auto;
+    padding:20px 28px;
+    border:2px solid var(--border);
+    border-radius:18px;
+    background:var(--surface);
+    box-shadow:0 14px 28px rgba(15,23,42,0.08);
+}
+h1{
+    font-size:20px; 
+    font-family:"Inter",sans-serif
+}
+.button{
+    border:none;
+    color:white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block; /*so that link can have padding*/
+    font-size:16px;
+    margin:4px 2px;
+    cursor:pointer; /*shows hand cursor*/
+}
+.button1{background-color: black;}
+
+.button2{background-color:black}
+
+.button3{
+    background-color: black;
+    text-align:center;
+    }
+.center-wrapper{ /*centers View Progress button , with spaces above and below*/
+    text-align:center;
+    margin:30px 0;
+}
+.h2{
+    font-size:20px;
+}
